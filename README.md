@@ -10,8 +10,6 @@ _Personal collection of automation scripts and system tweaks for Gaming, Linux, 
 
 - [ ] [```stardew_mods.md```](./Games/stardew_mods.md)
 
-- [ ] [```desabilitar_transferencia_de_dados_usb.md```](./Games/stardew_mods.md)
-
 
 Passo a passo de como instalo meus mods no Stardew Valley, e como crio atalhos para jogar Stardew Vanilla e Stardew com mods.
 
