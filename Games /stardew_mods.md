@@ -3,6 +3,7 @@
 
 <br>
 
+
 ## Adicionando os Mods
 
 > Para Linux, o caminho padrão da pasta de Mods (tendo em mente que está sendo usado o pacote da distro e não flatpak / snap) é
