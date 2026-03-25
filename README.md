@@ -7,7 +7,7 @@ Personal collection of automation scripts and system tweaks for Gaming, Linux, a
 ## About scritps
 
 
-- [ ]   ```disk space.py```
+- [ ]   ```disk_space.py```
 
 Script python que verifica se um armazenamento conectado é HDD, SSD ou NVMe. Mostra também espaço total, espaço livre, ocupado e porcentagem do espaço ocupado. Compatível com Linux e Windows
 
