@@ -1,6 +1,7 @@
 import psutil
 import shutil
 import platform
+import os
 
 # License: GNU GPLv3 - See LICENSE file for details.
 
@@ -12,46 +13,56 @@ Funciona em Windows e Linux.
 - Percentual de uso
 """
 
+
 def get_disk_info():
-    print("--- 🔍 Relatório de Unidades de Armazenamento ---")
+    print("--- 🔍 Relatório de Unidades (HDD / SSD / NVMe) ---")
     
-    # Lista todas as partições montadas (incluindo sua case Ugreen)
     partitions = psutil.disk_partitions()
     
     for partition in partitions:
-        # Ignora partições de sistema irrelevantes (como loop e squashfs no Linux)
+        # Ignora partições virtuais do Linux (ajuda a manter o log limpo)
         if 'loop' in partition.device or 'snap' in partition.device:
             continue
             
         try:
             usage = shutil.disk_usage(partition.mountpoint)
             
-            print(f"\n📌 Unidade: {partition.device} [Montada em: {partition.mountpoint}]")
-            print(f"   Sistema de Arquivos: {partition.fstype}")
+            print(f"\n📌 Unidade: {partition.device} [{partition.mountpoint}]")
             
-            # Cálculo de Espaço
-            print(f"   Total: {usage.total // (2**30):>4} GB")
-            print(f"   Usado: {usage.used // (2**30):>4} GB ({(usage.used/usage.total)*100:.1f}%)")
-            print(f"   Livre: {usage.free // (2**30):>4} GB")
+            # Cálculo de Espaço (GB)
+            total_gb = usage.total // (2**30)
+            used_gb = usage.used // (2**30)
+            free_gb = usage.free // (2**30)
+            percent = (usage.used / usage.total) * 100
 
-            # Lógica para detectar SSD/HDD dependendo do SO
+            print(f"   Capacidade: {total_gb:>4} GB")
+            print(f"   Em uso:     {used_gb:>4} GB ({percent:.1f}%)")
+            print(f"   Disponível: {free_gb:>4} GB")
+
+            # Identificação do Tipo de Hardware
             tipo = "Desconhecido"
-            if platform.system() == "Linux":
-                try:
-                    # Tenta ler o status rotacional no Linux (sda, sdb, etc)
-                    drive_name = partition.device.split('/')[-1].rstrip('123456789')
-                    with open(f"/sys/block/{drive_name}/queue/rotational", "r") as f:
-                        tipo = "HDD 💿" if f.read().strip() == "1" else "SSD 🚀"
-                except: pass
-            elif platform.system() == "Windows":
-                # No Windows, o psutil não dá o tipo direto, mas costumamos assumir 
-                # SSD para unidades de sistema rápidas ou via flags externas.
-                tipo = "Detectado via Windows"
+            dev_name = partition.device.split('/')[-1]
 
-            print(f"   Tipo Estimado: {tipo}")
+            if platform.system() == "Linux":
+                if "nvme" in partition.device:
+                    tipo = "NVMe 🚀⚡"
+                else:
+                    try:
+                        # Limpa o nome (ex: sda1 vira sda)
+                        drive_base = "".join([i for i in dev_name if not i.isdigit()])
+                        path = f"/sys/block/{drive_base}/queue/rotational"
+                        if os.path.exists(path):
+                            with open(path, "r") as f:
+                                tipo = "HDD 💿" if f.read().strip() == "1" else "SSD SATA 🚀"
+                    except: pass
+            elif platform.system() == "Windows":
+                # No Windows, se a unidade for C: e for rápida, geralmente é NVMe/SSD
+                tipo = "Disco Local (Windows)"
+
+            print(f"   Tecnologia: {tipo}")
             
         except PermissionError:
-            continue # Pula drives protegidos ou sem permissão
+            continue 
 
 if __name__ == "__main__":
     get_disk_info()
