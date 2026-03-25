@@ -38,4 +38,4 @@ _Step-by-step instructions to prevent the user from interacting with Microsoft D
 ---
 ⚖️ **License**
 
-This project is licensed under the GNU GPLv3 - see the [LICENSE](https://github.com/danieldilorenzo/General-Scripts/blob/main/LICENSE) file for details.
+This project is licensed under the GNU GPLv3 - see the [LICENSE](https://github.com/danieldilorenzo/danieldilorenzo/blob/main/LICENSE) file for details.
