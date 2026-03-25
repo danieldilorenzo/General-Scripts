@@ -1,6 +1,6 @@
 # 🛡️Impedir o usuário de interagir com o Microsoft Defender Antivírus
 
-Esse procedimento é utilizado para impedir que o usuário desabilite o Microsoft Defender Antivirus, impedindo que ele desative o scan, o que o deixaria vulnerável a ameaças.
+Esse procedimento é utilizado para impedir que o usuário desabilite o Microsoft Defender Antivirus, impedindo que ele desative o scan e busca de ameaças, o que o deixaria vulnerável.
 
 ## 🛠️ Passo a Passo
 
