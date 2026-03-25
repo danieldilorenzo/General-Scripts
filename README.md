@@ -18,7 +18,7 @@ _Python script that checks if a connected storage device is HDD, SSD, or NVMe. I
 <br>
 
 
-- [ ] [ ```monitor_preços_steam.py``` ](./Scripts/monitor_preços_steam.py)
+- [ ] [ ```monitor_preços_steam.py``` ](./Scripts/monitor_precos_steam.py)
 
 
 ## About General Tweaks
