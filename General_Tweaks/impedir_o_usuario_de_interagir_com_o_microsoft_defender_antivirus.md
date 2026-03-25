@@ -17,7 +17,7 @@ Esse procedimento é utilizado para impedir que o usuário desabilite o Microsof
 
 ## 💡 Notas Importantes
 * **Aplicação:** Após alterar para "Habilitado", a restrição é aplicada quase instantaneamente. Caso não funcione de imediato, rode o comando `gpupdate /force` no CMD como administrador.
-* * **Versões do Windows:** Este recurso está disponível nativamente nas versões *Pro*, *Enterprise* e *Education*.
+* **Versões do Windows:** Este recurso está disponível nativamente nas versões *Pro*, *Enterprise* e *Education*.
 * **Reversão:** Para liberar o acesso novamente, basta colocar as opções como `Não Configurado`.
 
 _Documentação gerada para o repositório General-Scripts._
