@@ -17,7 +17,7 @@ _Python script that checks if a connected storage device is HDD, SSD, or NVMe. I
 
 ## About General Tweaks
 
-- [ ] [```desabilitar_transferencia_de_dados_usb.md```](./General-Tweaks/desabilitar_transferencia_de_dados_usb.md)
+- [ ] [```desabilitar_transferencia_de_dados_usb.md```](./General_Tweaks/desabilitar_transferencia_de_dados_usb.md)
 
 Passo a passo para impedir que o usuário consiga acessar o pendrive no Windows, incluindo visualização de conteúdo do pendrive, visualização, remoção e exclusão de arquivos.
 
