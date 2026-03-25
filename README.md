@@ -20,6 +20,9 @@ _Python script that checks if a connected storage device is HDD, SSD, or NVMe. I
 
 - [ ] [ ```monitor_preços_steam.py``` ](./Scripts/monitor_precos_steam.py)
 
+Script python que verifica o preço dos jogos na Steam, mostra se está em desconto, e qual o preço normal dele.
+
+_A Python script that checks the price of games on Steam, shows if they are on sale, and what their regular price is._
 
 ## About General Tweaks
 
