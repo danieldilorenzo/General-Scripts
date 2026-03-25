@@ -53,7 +53,15 @@ Script python que verifica o preço dos jogos na Steam, mostra se está em desco
 
 _A Python script that checks the price of games on Steam, shows if they are on sale, and what their regular price is._
 
+## About Xiaomi
 
+- [ ] [```guia_de_otimizacao_e_debloat_hyperos.md```](./Xiaomi/guia_de_otimizacao_e_debloat_hyperos.md)
+
+Guia para otimização e debloat do Sistema HyperOS 3.
+
+_Guide for optimizing and debloating the HyperOS 3 system._
+
+<br>
 
 ---
 ⚖️ **License**
