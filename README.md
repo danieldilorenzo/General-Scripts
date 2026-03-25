@@ -15,6 +15,8 @@ _Python script that checks if a connected storage device is HDD, SSD, or NVMe. I
 
 <br>
 
+## About General Tweaks
+
 ⚖️ License
 
 This project is licensed under the GNU GPLv3 - see the LICENSE file for details.# General Scripts
