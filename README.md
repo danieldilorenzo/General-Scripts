@@ -1,6 +1,8 @@
 # General Scripts
 
-Personal collection of automation scripts and system tweaks for Gaming, Linux, and Windows 🎮🛠️✨
+Coleção pessoal de scripts de automação e tweaks para Games, Linux e Windows 🎮🛠️✨
+
+_Personal collection of automation scripts and system tweaks for Gaming, Linux, and Windows 🎮🛠️✨_
 
 <br>
 
