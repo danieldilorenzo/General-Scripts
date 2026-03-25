@@ -1,0 +1,14 @@
+# Python (Lixo de compilação)
+__pycache__/
+*.py[cod]
+
+# Windows (Arquivos invisíveis do sistema)
+Thumbs.db
+Desktop.ini
+
+# Linux (Arquivos temporários e de miniatura)
+.DS_Store
+.directory
+
+# VS Code (Configurações da sua interface)
+.vscode/
