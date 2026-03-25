@@ -35,7 +35,7 @@ _Step-by-step instructions to prevent the user from interacting with Microsoft D
 
 <br>
 
-## About scritps
+## About Scritps
 
 
 - [ ] [ ```disk_space.py``` ](./Scripts/disk_space.py)
