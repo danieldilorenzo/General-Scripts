@@ -124,7 +124,7 @@ Baixe  o Zip, descompacte e instale de acordo com as [instruções](https://star
 
 > Após adicionar o SMAPI, podemos criar atalhos para diferenciar quando queremos jogar com mods e sem mods. Além disso, podemos criar um backup automático
 
-Criar um arquivo vazio com o nome "Stardew_Valley.desktop" (os ícones estão no meu Github)
+Criar um arquivo vazio com o nome "Stardew_Valley.desktop" (os ícones estão na página inicial do meu Github)
 
 ```
 [Desktop Entry]
