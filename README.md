@@ -36,7 +36,6 @@ _Step-by-step instructions to prevent the user from interacting with Microsoft D
 <br>
 
 ---
-⚖️ License
+⚖️ **License**
 
-This project is licensed under the GNU GPLv3 - see the LICENSE file for details.# General Scripts
-Personal collection of automation scripts and system tweaks for Gaming, Linux, and Windows 🎮🛠️✨
+This project is licensed under the GNU GPLv3 - see the [LICENSE](https://github.com/danieldilorenzo/General-Scripts/blob/main/LICENSE) file for details.
