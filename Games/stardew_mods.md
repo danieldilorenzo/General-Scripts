@@ -8,11 +8,11 @@
 
 Para Linux, o caminho padrão da pasta de Mods é
 
-'/home/daniel/.steam/steam/steamapps/common/Stardew Valley'
+`/home/daniel/.steam/steam/steamapps/common/Stardew Valley`
 
 Usando a Steam em Flatpak, o caminho é:
 
-'/home/daniel/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/Stardew Valley'
+`/home/daniel/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/Stardew Valley`
 
 <br>
 
